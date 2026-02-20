@@ -1,14 +1,11 @@
 #include <stdio.h>
-
+// Henrique Vieira Peres e Montserrat Veloso
 int main() {
     int numero, meses;
     int quantidade = 0;
     char continuar;
 
-    float valor_iptu;
-    float multa;
-    float juros;
-    float total;
+    float valor_iptu, multa, juros, total;
 
     float soma_iptu = 0;
     float soma_multa = 0;
@@ -19,7 +16,7 @@ int main() {
         printf("Numero do imovel: ");
         scanf("%d", &numero);
 
-        printf("Valor do IPTU: ");
+        printf("Valor do IPTU: R$");
         scanf("%f", &valor_iptu);
 
         printf("Meses em atraso: ");
@@ -42,10 +39,10 @@ int main() {
     } while (continuar == 's' || continuar == 'S');
 
     printf("\nQuantidade de imoveis: %d\n", quantidade);
-    printf("Somatorio IPTU original: %.2f\n", soma_iptu);
-    printf("Somatorio multas: %.2f\n", soma_multa);
-    printf("Somatorio juros: %.2f\n", soma_juros);
-    printf("Somatorio total com acrescimos: %.2f\n", soma_total);
+    printf("Somatorio IPTU original: R$%.2f\n", soma_iptu);
+    printf("Somatorio multas: R$%.2f\n", soma_multa);
+    printf("Somatorio juros: R$%.2f\n", soma_juros);
+    printf("Somatorio total com acrescimos: R$%.2f\n", soma_total);
 
     return 0;
 }
